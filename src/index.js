@@ -2,13 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import './global.css';
-import BadgeNew from './pages/badge-new';
+import BadgesNew from './pages/badge-new';
+import Badges from './pages/badges';
 // import App from './App';
 // import * as serviceWorker from './serviceWorker';
 
 const container = document.getElementById('root');
 ReactDOM.render(
-    <BadgeNew/>,
+    <Badges/>,
     container
 );
 

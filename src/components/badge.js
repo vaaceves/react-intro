@@ -6,13 +6,13 @@ import confLogo from '../images/badge-header.svg';
 
 class Badge extends Component {
     render() {
-        const {
+        /*const {
             firstName,
             lastName,
             avatarURL,
             jobTitle,
             twitter
-        } = this.props;
+        } = this.props;*/
         return(
             <div
                 className = 'badge'
@@ -30,16 +30,16 @@ class Badge extends Component {
                 >
                     <img
                         className = 'badge__avatar'
-                        src = {avatarURL}
+                        src = {this.props.avatarURL}
                         alt = 'avatar'
                     />
-                    <h1>{firstName} <br/> {lastName}</h1>
+                    <h1>{this.props.firstName} <br/> {this.props.lastName}</h1>
                 </div>
                 <div
                     className = 'badge__section-info'
                 >
-                    <p>{jobTitle}</p>
-                    <div>@{twitter}</div>
+                    <p>{this.props.jobTitle}</p>
+                    <div>@{this.props.twitter}</div>
                 </div>
                 <div
                     className = 'badge__footer'
