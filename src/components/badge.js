@@ -6,6 +6,13 @@ import confLogo from '../images/badge-header.svg';
 
 class Badge extends Component {
     render() {
+        const {
+            firstName,
+            lastName,
+            avatarURL,
+            jobTitle,
+            twitter
+        } = this.props;
         return(
             <div
                 className = 'badge'
@@ -19,20 +26,20 @@ class Badge extends Component {
                     />
                 </div>
                 <div
-                    className = 'badge__section_name'
+                    className = 'badge__section-name'
                 >
                     <img
                         className = 'badge__avatar'
-                        src = 'https://www.gravatar.com/avatar?d=identicon'
+                        src = {avatarURL}
                         alt = 'avatar'
                     />
-                    <h1>Alexis <br/> Aceves</h1>
+                    <h1>{firstName} <br/> {lastName}</h1>
                 </div>
                 <div
-                    className = 'badge__section_info'
+                    className = 'badge__section-info'
                 >
-                    <p>Computer Science Engineer</p>
-                    <div>@vaaceves</div>
+                    <p>{jobTitle}</p>
+                    <div>@{twitter}</div>
                 </div>
                 <div
                     className = 'badge__footer'

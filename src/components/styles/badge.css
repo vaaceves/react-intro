@@ -12,13 +12,13 @@
     display: flex;
     justify-content: center;
 }
-.badge__section_name {
+.badge__section-name {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem 0;
 }
-.badge__section_info {
+.badge__section-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
